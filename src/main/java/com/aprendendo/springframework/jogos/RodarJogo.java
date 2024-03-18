@@ -1,10 +1,14 @@
 package com.aprendendo.springframework.jogos;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class RodarJogo {
 
-    JogoConsole jogo;
+    private JogoConsole jogo;
 
-    public RodarJogo(JogoConsole jogo) {
+    public RodarJogo(@Qualifier("JogoDoContraQualifier") JogoConsole jogo) {
         this.jogo = jogo;
     }
 

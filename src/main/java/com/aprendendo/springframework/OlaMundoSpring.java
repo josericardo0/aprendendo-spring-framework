@@ -11,6 +11,6 @@ public class OlaMundoSpring {
         System.out.println(context.getBean("pessoa"));
         System.out.println(context.getBean("endereco1"));
         System.out.println(context.getBean("pessoaParChamadoDeMetodoTresParametros"));
-        
+
     }
 }

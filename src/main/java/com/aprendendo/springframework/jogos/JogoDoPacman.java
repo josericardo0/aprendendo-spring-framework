@@ -1,5 +1,9 @@
 package com.aprendendo.springframework.jogos;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class JogoDoPacman implements JogoConsole{
     public void cima() {
         System.out.println("Mover para cima");

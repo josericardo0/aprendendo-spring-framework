@@ -1,5 +1,10 @@
 package com.aprendendo.springframework.jogos;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class JogoDoMario implements JogoConsole{
     public void cima() {
         System.out.println("Pular");
